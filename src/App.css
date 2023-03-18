@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  width: 100%;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coins-tab {
+  display: grid;
+  align-items: center;
+  background-color: rgba(95, 158, 160, 0.2);
+  margin: 12px 0;
+  padding: 10px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 1s;
+  grid-template-columns: 1.5fr 1fr 1fr 0.8fr;
+}
+
+.coins-tab:hover {
+  background-color: rgba(95, 158, 160, 0.3);
+}
+
+.coin-logo {
+  width: 56px;
+  margin: 0 20px;
+}
+
+.coin-details h4 {
+  font-weight: 500;
+  justify-self: baseline;
+}
+
+.pagination-bar {
+  margin: 20px 0 0;
+}
+
+.coins-tab-sec-1 {
+  display: flex;
+}
+
+.coins-tab-sec-2 h2 {
+  font-weight: 600;
+}
+
+.coins-tab-sec-2 h3 {
+  font-weight: 500;
+}
+
+.coins-tab-sec-3 {
+text-align: center;
+}
+.coins-tab-sec-3 h3 {
+font-weight: 600;
+}
+.coins-tab-sec-4 {
+  display: flex;
+}
+
+.rgt-dtls p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.Single-Coin-Page {
+  display: flex;
+  padding: 25px;
+}
+
+.Single-Coin-Page-container-1 {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  padding-right: 20px;
+  border-right: 1px dashed black;
+}
+.Single-Coin-Page-container-1 img {
+  height: 200px;
+  width: 200px;
+  align-self: center;
+}
+.Single-Coin-Page-container-1 h1 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+.Single-Coin-desc {
+  text-align: justify;
+  word-wrap: break-word;
+}
+.Single-Coin-Page-container-1 span {
+  font-size: 1.5rem;
+  margin: 18px 0;
+}
