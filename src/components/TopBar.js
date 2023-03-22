@@ -17,7 +17,6 @@ function TopBar() {
           <Typography variant="h4" component="div" sx={{ flexGrow: 1 }} style={{userSelect: "none", cursor: 'pointer'}} onClick={()=>nav('/')}>
             Crypto Tracker
           </Typography>
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </Box>

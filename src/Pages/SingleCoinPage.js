@@ -1,6 +1,8 @@
+import { Button, Stack } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Cryptochart from "../components/Cryptochart";
 
 function SingleCoinPage() {
   const params = useParams();
@@ -50,8 +52,11 @@ function SingleCoinPage() {
               : ""}
           </p>
         </span>
+        <Stack>
+        <Button variant="outlined" style={{fontWeight: "600", fontSize: 18}}>Add to Watchlist</Button>
+        </Stack>
       </div>
-      <div className="Single-Coin-Page-container-2"></div>
+      <div className="Single-Coin-Page-container-2"><Cryptochart/></div>
     </div>
   );
 }

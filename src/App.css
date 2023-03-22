@@ -32,7 +32,7 @@ html {
 }
 
 .coins-tab:hover {
-  background-color: rgba(95, 158, 160, 0.3);
+  background-color: rgba(95, 158, 160, 0.4);
 }
 
 .coin-logo {
@@ -104,4 +104,41 @@ font-weight: 600;
 .Single-Coin-Page-container-1 span {
   font-size: 1.5rem;
   margin: 18px 0;
+}
+.Single-Coin-Page-container-2{
+  width: 75%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.charts-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.time-section{
+  display: flex;
+  justify-content: center;
+}
+
+.chart{
+  margin-bottom: 20px ;
+}
+
+@media screen and (max-width: 700px) {
+  .Single-Coin-Page{
+    flex-direction: column;
+  }
+  .Single-Coin-Page-container-1, .Single-Coin-Page-container-2{
+    width: 100%;
+    border: none;
+    margin: 20px 0;
+  }
+  .chart {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 }
