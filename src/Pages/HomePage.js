@@ -9,10 +9,12 @@ function HomePage() {
 
   const [page, setPage] = useState(1);
 
+
   useEffect(() => {
     axios
       .get(
-        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=${page}&sparkline=false`, { crossDomain: true }
+        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=${page}&sparkline=false`,
+        { crossDomain: true }
       )
       .then((data) => {
         setCoinArray(data.data);
@@ -21,12 +23,6 @@ function HomePage() {
 
   return (
     <div className="App">
-      <TextField
-        fullWidth
-        label="Search Coin &#128269;
-      "
-        id="fullWidth"
-      />
       {coinArray.map((e, key) => (
         <CoinsBar
           key={key}

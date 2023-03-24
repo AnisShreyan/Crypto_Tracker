@@ -52,9 +52,9 @@ function SingleCoinPage() {
               : ""}
           </p>
         </span>
-        <Stack>
+        {/* <Stack>
         <Button variant="outlined" style={{fontWeight: "600", fontSize: 18}}>Add to Watchlist</Button>
-        </Stack>
+        </Stack> */}
       </div>
       <div className="Single-Coin-Page-container-2"><Cryptochart/></div>
     </div>
